@@ -1,0 +1,444 @@
+/**index.wxss**/
+@import "../style/cart/iconfont.wxss";
+@import "../style/assessment.wxss";
+@import "../style/seller.wxss";
+
+.top text, .footer text {
+  color: white;
+}
+button{
+  outline: none;
+  border: 0px;
+}
+.top {
+  display: flex;
+  height: 25%;
+  width: 100%;
+  position: absolute;
+  top: 0pc;
+  background-color: #4876ff;
+}
+
+.sellerIcon {
+  height: 200rpx;
+  width: 200rpx;
+  position: relative;
+  top: 5%;
+  right: -5%;
+}
+
+.sellerInfo {
+  height: 200rpx;
+  width: 460rpx;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  font-size: 50rpx;
+  overflow: hidden;
+}
+
+.sendInfo {
+  font-size: 25rpx;
+  height: 50rpx;
+  width: 450rpx;
+  margin-top: 7rpx;
+  margin-bottom: 40rpx;
+  display: block;
+}
+
+.inform {
+  font-size: 25rpx;
+  height: 30rpx;
+  width: 450rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.activity {
+  height: 50rpx;
+  width: 600rpx;
+  position: absolute;
+  left: 30rpx;
+  bottom: 5rpx;
+  font-size: 25rpx;
+}
+
+.nav {
+  position: relative;
+  top: 300rpx;
+  display: flex;
+  height: 90rpx;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  line-height: 90rpx;
+}
+
+.on {
+  border-bottom: 1px solid #4876ff;
+}
+
+.nav navigator {
+  display: block;
+  margin-left: 10%;
+  width: 20%;
+  text-align: center;
+}
+
+.leftNav {
+  height: 700rpx;
+  width: 25%;
+  position: relative;
+  top: 320rpx;
+  left: -300rpx;
+}
+
+.leftNav navigator {
+  display: block;
+  height: 100rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid gray;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  height: 700rpx;
+  width: 75%;
+  position: absolute;
+  top: 35%;
+  right: 0rpx;
+}
+
+.food {
+  position: relative;
+  display: block;
+  height: 190rpx;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 5rpx;
+  font-size: 22rpx;
+}
+
+.foodPic {
+  height: 150rpx;
+  width: 150rpx;
+  margin: 10rpx;
+  display: inline-block;
+}
+.foodName,.foodAsses,.foodPrice{
+  position: absolute;
+  height: 35rpx;
+  left: 180rpx;
+}
+.foodName {
+  top: 10rpx;
+  height: 40rpx;
+  font-size: 33rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+   display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.foodAsses {
+  top: 70rpx;
+}
+
+.foodPrice {
+  bottom: 50rpx;
+  font-size: 45rpx;
+  color: #ee2c2c;
+}
+
+.order {
+  position: absolute;
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 100%;
+  font-size: 50rpx;
+  line-height: 50rpx;
+  background-color: #4876ff;
+  color: white;
+  top: 63%;
+  padding: 0px;
+}
+
+.Add {
+  left: 90%;
+}
+
+.Del {
+  /* padding-left: 15rpx; */
+  left: 73%;
+  display: none;
+}
+
+.orderNum {
+  position: absolute;
+  top: 63%;
+  left: 83%;
+  height: 50rpx;
+  width: 30rpx;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.footer {
+  height: 9%;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background: #6b6b6b;
+  z-index: 15;
+}
+
+.trolley {
+  position: absolute;
+  left: 30rpx;
+  top: -27rpx;
+  height: 90rpx;
+  width: 90rpx;
+  background: #363636;
+  border: 3px solid #4f4f4f;
+  border-radius: 100%;
+  text-align: center;
+  animation: myfirst 3s;
+  
+}
+
+.icon-caigou {
+  font-size: 30px;
+  color: #282828;
+  line-height: 45px;
+}
+
+.totalPrice {
+  font-size: 40rpx;
+  display: inline-block;
+  margin-left: 20%;
+  position: absolute;
+  top: 10%;
+}
+
+.totalFoods {
+  height: 40rpx;
+  width: 40rpx;
+  background-color: red;
+  border-radius: 30%;
+  text-align: center;
+  font-size: 30rpx;
+  position: relative;
+  top: -40rpx;
+  left: 100rpx;
+  display: block;
+  z-index: 1;
+}
+
+.footer .sendFee {
+  display: block;
+  font-size: 20rpx;
+  margin-left: 21%;
+  color: #cfcfcf;
+  margin-top: 20rpx;
+  position: absolute;
+  top: 35%;
+}
+
+.footer .minSend {
+  font-size: 40rpx;
+  position: fixed;
+  right: 6%;
+  bottom: 2.5%;
+    z-index: 10；
+}
+
+.pay {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: white;
+  background-color: #32cd32;
+  border-radius: 0;
+  font-size: 40rpx;
+  line-height: 100rpx;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+.orderInfo{
+  width: 100%;
+  background-color: #eaeaea;
+  position:absolute;
+  height: 35%;
+  transition: 0.5s bottom 0s ease-in-out;
+}
+.allOrder{
+  height:90%;
+  width: 100%;
+  background: white;
+}
+.orderInfoHead{
+  width: 100%;
+  height: 10%;
+  padding: 20rpx;
+}
+.foodChoosen{
+  display: inline-block;
+  border-left: 4px solid #4876ff;
+  padding-left:10rpx; 
+}
+.clear{
+  display: inline-block;
+  margin-left:60%; 
+}
+.eachOrder{
+  height: 20%;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  border-bottom:1px solid #eaeaea;
+  margin-bottom:10rpx;
+  padding-left: 20rpx;
+  padding-top: 5%;
+}
+.eachOrder button{
+  display: block;
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 100%;
+  font-size: 50rpx;
+  line-height: 50rpx;
+  background-color: #4876ff;
+  color: white;
+  padding: 0px;
+}
+.orderAdd,.orderCount,.orderDel,.orderPrice{
+    display: inline-block;
+    position: absolute;
+    top: 26%;
+}
+.orderPrice{
+  right: 30%;
+  color: red;
+}
+.orderAdd{
+ right: 4%;
+} 
+.orderCount{
+    right: 13%;
+}
+.eachOrder .orderDel{
+    right: 18%;
+}
+.cover{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 100;
+  background: grey;
+  opacity: 0.8;
+  display: none;
+}
+.show{
+  height: 70%;
+  width: 80%;
+  position: fixed;
+  z-index: 101;
+  top: 15%;
+  left: 10%;
+  background:white;
+  opacity: 1;
+  border-radius: 2px;
+  display: none;
+}
+.show image{
+  width: 100%;
+  height: 70%;
+  padding: 0px;
+  margin: 0px;
+
+}
+.show .describe{
+   height: 30%;
+   background: white;
+}
+.describe .foodName{
+  font-size: 16px;
+  height: 10%;
+  left: 5%;
+  font-weight: bold;
+  top: 75%;
+}
+.describe .foodAsses{
+  top: 81%;
+  font-size: 12px;
+  left: 5%;
+}
+.describe .discount{
+  background: white;
+  font-size: 12px;
+  border: 1px solid red;
+  height:4%;
+  width: 70%;
+  color:red;
+  left: 5%;
+  text-align: left;
+  position: absolute;
+  top: 86%;
+  margin: 0px;
+}
+.describe .foodPrice{
+  font-size: 18px;
+  left: 5%;
+  top: 92%;
+}
+.describe .Add
+{
+  top: 92%;
+  right: 3%;
+}
+.describe .orderNum
+{
+    top: 92%;
+    right: 9%;
+    font-size: 15px;
+}
+.describe .Del
+{
+  top: 92%;
+  right: 20%;
+}

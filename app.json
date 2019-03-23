@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/page/attachment/attachment",
+    "pages/page/order/order",
+    "pages/page/addAddress/addAddress"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4876FF",
+    "navigationBarTitleText": "Xxin",
+    "navigationBarTextStyle": "black"
+  }
+}

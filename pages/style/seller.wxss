@@ -1,0 +1,74 @@
+.seller {
+   height: 740rpx; 
+  width: 100%;
+  background-color: #eaeaea;
+  position: absolute;
+  display: none;
+  top: 33%;
+  left: 0px;
+  transition: 0.5s all 0.1s linear;
+  z-index: 10;
+}
+.seller text{
+  font-size:25rpx;
+  margin-left:20rpx;
+  margin-bottom:10rpx;
+}
+.seller .textHead{
+
+  font-size: 35rpx;
+  color: balck;
+  font-weight: bold;
+  display: block;
+  padding-top:10px;
+}
+.seller image {
+  height: 200rpx; 
+  width: 200rpx;
+  margin: 20rpx 10rpx;
+  margin-left:20rpx; 
+}
+.sendInfoView,.activityView, .sellerView,.sellerInfoView {
+  width: 100%;
+  background-color: white;
+  margin: 4px 0px;
+}
+.fullSub,.discount,.firstOrder,.pub_inform{
+  display: inline-block;
+  width:70rpx;
+  margin:0px 10rpx;
+  text-align: center;
+}
+.fullSub{
+  background-color:#FF3030;
+}
+.discount{
+  background-color:#7FFF00;
+}
+.firstOrder{
+  background-color:#D15FEE;
+}
+.pub_inform{
+  background-color:#FFE4B5;
+}
+.sendInfoView{
+  height: 180rpx;
+}
+
+.sellerInfoView view{
+  width: 90%;
+  border-bottom:1px solid #eaeaea;
+  margin-left:4px;
+  margin-bottom:10rpx; 
+}
+.sellerInfoView view:nth-child(5){
+  margin-bottom:60rpx; 
+}
+.sellerInfoView text{
+   display: inline-block;
+   width: 45%;
+}
+.sellerInfoText{
+  width: 19%;
+  display: inline-block;
+}

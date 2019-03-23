@@ -1,0 +1,23 @@
+<view class="attachmentContainer">
+<view class='all'>
+  <view class='textView'>
+  <textarea placeholder="填写额外对餐厅和骑手小哥备注的信息" bindinput='getAttachment'></textarea>
+  </view>
+  <view class='label'>
+  <view class='la'>
+   <text class="{{pick.la.no}}" data-index="la" bindtap='chooseLabel' data-key="no" data-name="不要辣">不要辣</text>
+    <text class="{{pick.la.few}}" data-index="la" bindtap='chooseLabel' data-key="few" data-name="少点辣">少点辣</text>
+     <text class="{{pick.la.more}}" data-index="la" bindtap='chooseLabel' data-key="more" data-name="多点辣">多点辣</text>
+  </view>
+  <view class='no'>
+    <text class="{{pick.xiangcai}}" data-index="xiangcai" data-name="不要香菜"  bindtap='chooseLabel'>不要香菜</text>
+    <text class="{{pick.noOnion}}" data-index="noOnion" data-name="不要洋葱" bindtap='chooseLabel'>不要洋葱</text>
+  </view>
+  <view class='more'>
+  <text class="{{pick.cu}}" data-index="cu"  data-name="多点醋" bindtap='chooseLabel'>多点醋</text>
+  <text class="{{pick.moreOnion}}" data-index="moreOnion"  data-name="多点葱" bindtap='chooseLabel'>多点葱</text>
+  </view>
+</view>
+</view>
+<button class='sure' bindtap='sure'>确定</button>
+</view>

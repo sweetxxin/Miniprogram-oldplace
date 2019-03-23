@@ -1,0 +1,269 @@
+
+.orderContainer{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.address{
+  height: 15%;
+  width: 100%;
+  background-color: white;
+  margin-bottom:2%;
+  padding-bottom: 5%;
+  font-size: 14px;
+}
+.addAddr{
+  height: 50%;
+  width: 40%;
+  border-radius: 10px;
+  color: #1E90FF;
+  border: 1px solid  #1E90FF;
+  margin-top: 5%;
+  padding: 0px;
+  line-height: 250%;
+}
+.addrHead{
+  height: 10%;
+  font-size: 14px;
+  margin-top:4%;
+  margin-left: 5%;
+  margin-bottom:2%; 
+}
+.place{
+  display: inline-block;
+  height: 5%;
+  width: 10%;
+  color: green;
+  border: 1px solid green;
+  text-align: center;
+}
+.addrInfo{
+  height: 20%;
+  width: 90%;
+   margin-left: 5%;
+   margin-bottom:1%; 
+   font-size: 20px;
+   font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.username{
+  margin-left:5%;
+  margin-right:2%;
+  font-size: 18px;   
+}
+.usertele{
+   font-size: 18px;
+}
+.middle{
+  height: 18%;
+  width: 100%;
+  background-color: white;
+  margin-bottom:2%;
+  position: relative;
+}
+.sendTime,.payMethod{
+  height: 50%;
+  width: 90%;
+  border-bottom:0.1px solid #EAEAEA; 
+  line-height: 320%;
+  padding-left:5%;
+  font-size: 16px;
+  position: relative;
+}
+.sendTime text,.payMethod text{
+  font-size:16px;
+  position: absolute;
+  right: 0px;
+  color: #1E90FF;
+}
+.pickerTime{
+  color: #1E90FF;
+   font-size:16px;
+}
+.ordersInfo{
+  width: 100%;
+  background-color: white;
+  margin-bottom:2%;
+  position: relative;
+  top: 0%;
+}
+.shopName{
+  font-size: 20px;
+  font-weight: bold;
+  height: 10%;
+  width: 90%;
+  border-bottom:1px solid #EAEAEA;
+  line-height: 300%;
+  margin-left: 5%;
+}
+.order{
+  height:70px;
+  width: 90%;
+  border-bottom:0.5px solid #EAEAEA;
+  margin-left: 5%;
+  position: relative;
+}
+.order image{
+  height: 40px;
+  width: 40px;
+  margin-top: 15px;
+}
+.order text{
+  font-size: 16px;
+  position: absolute;
+  top: 26px;
+  left: 15%;
+  display: inline-block;
+}
+.order text:nth-child(2)
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+      width: 40%;
+}
+.order text:nth-child(3)
+{
+  left: 58%;
+  width: 10%;
+  font-size: 16px;
+  top: 27px;
+}
+.order text:nth-child(4)
+{
+  left: 70%;
+  width: 10%;
+}
+.order text:nth-child(5)
+{
+  left: 85%;
+  width: 14%;
+  text-align: right;
+  color: red;
+}
+.discount{
+height: 40px;
+width: 90%;
+border-bottom:1px solid #EAEAEA;
+margin-left:5%;
+line-height: 200%;
+}
+.totalPrice{
+  height: 80px;
+  width: 90%;
+  margin-left:5%;
+  line-height: 200%;
+}
+.discountText{
+  position: absolute;
+  bottom: 10%;
+  left: 16%;
+  font-size: 16px;
+  color: #6b6b6b;
+}
+.count{
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  font-size: 15px;
+}
+.countPrice{
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  font-size: 20px;
+}
+.other{
+  height: 300rpx;
+  width: 100%;
+  background: white;
+  margin-bottom: 2%;
+  position: relative;
+}
+.tableware,.attachment,.invoice{
+  height: 16px;
+  width: 100%;
+  border-bottom: 1px solid #EAEAEA;
+  padding-left:5%;
+  font-size: 16px;
+  padding-top:17px;
+  padding-bottom: 17px;
+}
+.other text{
+  font-size: 14px;
+  position: absolute;
+  right: 5%;
+  display: inline-block;
+  color:#6b6b6b;
+    overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.attachment text{
+  width: 60%;
+  text-align: right;
+   display: -webkit-box;
+   top: 45%;
+}
+.picker{
+    color:#6b6b6b;
+    font-size: 14px;
+}
+.footer {
+  height: 34px;
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  background: #6b6b6b;
+  z-index: 15;
+  padding-left: 5%;
+  padding-top: 16px;
+}
+.footer text:nth-child(1)
+{
+  color:white;
+  font-size: 18px;
+}
+.footer text:nth-child(2)
+{
+  color:grey;
+  font-size: 14px;
+  position: absolute;
+  top: 19px;
+  left: 60px;
+  margin-left:15px; 
+}
+.pay {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: white;
+  background-color: #32cd32;
+  border-radius: 0;
+  font-size: 40rpx;
+  line-height: 100rpx;
+}
+.timePicker{
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+}
+.tablewarePicker{
+    display: inline-block;
+  position: absolute;
+  right: 5%;
+}
+

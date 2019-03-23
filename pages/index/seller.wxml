@@ -1,0 +1,40 @@
+ <scroll-view class='seller' scroll-y='true' style="display:{{display}}">
+    <view class='sendInfoView'>
+      <text class='textHead'>配送信息\n</text>
+      <text>{{seller[0].sendInfo}}
+    <text> 配送费￥{{seller[0].sendFee}}</text>
+      </text>
+    </view>
+    <view class='activityView'>
+      <text class='textHead'>活动与服务\n</text>
+      <view  wx:for="{{activity}}" wx:for-item="act" wx:for-index="actName">
+        <text class=".{{acttivityCode[actName]}}">{{actName}}</text>
+        <text>{{act[0]}} \n</text>
+      </view>
+    </view>
+    <view class='sellerView'>
+      <text class='textHead'>商家实景\n</text>
+      <image src='../img/seller1.jpg'></image>
+      <image src='../img/seller1.jpg'></image>
+      <image src='../img/seller1.jpg'></image>
+    </view>
+    <view class='sellerInfoView'>
+      <text class='textHead'>商家信息\n</text>
+      <view>
+      <text class='sellerInfoText'>品类</text>
+      <text>{{seller[0].category}}</text>
+      </view>
+      <view>
+          <text class='sellerInfoText'>商家电话</text>
+          <text >{{seller[0].telephone}}</text>
+      </view>
+      <view>
+      <text class='sellerInfoText'>地址</text>
+      <text>{{seller[0].address}}</text>
+      </view>
+      <view>
+      <text class='sellerInfoText'>营业时间</text>
+      <text>{{seller[0].on_time}}\n</text>
+      </view>
+    </view>
+  </scroll-view>

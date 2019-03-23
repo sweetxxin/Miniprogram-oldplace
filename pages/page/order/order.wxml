@@ -1,0 +1,61 @@
+<view class='orderContainer'>
+  <view class='address'>
+    <button class='addAddr' style="display:{{addAddrDisplay}}" bindtap='addAddr'>+添加收货地址</button>
+    <view style="display:{{addrDisplay}}" bindtap='addAddr'>
+    <view class='addrHead'>订单配送至 <text class='place'>{{addrInfo.label}}</text></view>
+    <view class='addrInfo'>{{addrInfo.address}}{{addrInfo.detail}}</view>
+    <text class='username'>{{addrInfo.name}}{{addrInfo.gender}}</text>
+    <text class='usertele'>{{addrInfo.telephone}}</text>
+    </view>
+  </view>
+  <view class='middle'>
+    <view class='sendTime'>
+    配送时间
+      <picker mode="time" value="{{time}}" start="{{currentTime}}" end="21:01" bindchange="bindTimeChange" class='timePicker'>
+    <view class="pickerTime">
+      {{time}} >
+    </view>
+  </picker>
+    </view>
+    <view class='payMethod'>支付方式
+    <text>在线支付</text>
+    </view>
+  </view>
+  <view class='ordersInfo'>
+        <view class='shopName'>老地方</view>
+        <view class='order' wx:for="{{orders}}" wx:for-item="food" wx:for-index="label">
+          <image src='{{food.img}}'></image>
+          <text>{{food.name}}</text>
+          <text>x {{food.count}}</text>
+          <text style='text-decoration:line-through'>￥18</text> 
+          <text>￥{{food.price*food.count}}</text>
+      </view>
+      <view class='discount'>红包</view>
+      <view class='totalPrice'>优惠
+      <text class='discountText'>无优惠</text>
+      <text class='count'>小计￥</text>
+       <text class='countPrice'>{{totalPrice}}</text>
+      </view>
+</view>
+<view class='other'>
+  <view class='tableware'>餐具
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{tableware}}" class='tablewarePicker'>
+    <view class="picker">
+    {{num}}
+    </view>
+  </picker> 
+  </view>
+  <view class='attachment' bindtap='orderAttachment'>订单备注
+  <text>{{attachment}}></text>
+  </view>
+  <view class=' invoice'>发票信息
+  <text>商家不支持开发票</text></view>
+</view>
+<view class='footer'>
+  <text>￥{{totalPrice}} </text>
+  <text>| 已优惠￥3</text>
+  <button class='pay' bindtap='pay'>去支付</button>
+</view>
+</view>
+
+

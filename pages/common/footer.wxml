@@ -1,0 +1,10 @@
+<view class='footer'>
+    <text class="totalFoods {{show}}">{{totalFoods}}</text>
+    <view class='trolley' style="background-color:{{trolley_bgc}};" bindtap='trolleyTap'>
+      <i class="icon iconfont icon-caigou" style="color:{{icon_bgc}}"></i>
+    </view>
+    <text class='totalPrice'>￥{{totalPrice}}\n</text>
+    <text class='sendFee'>配送费￥6</text>
+    <text class='minSend'>￥0起送</text>
+    <button class="pay {{show}}" bindtap='pay'>去结算</button>
+  </view>

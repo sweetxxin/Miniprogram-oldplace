@@ -1,0 +1,60 @@
+<view class="container">
+  <include src="../common/top.wxml" />
+  <view class="nav">
+    <navigator bindtap="goodsTap" class="{{goodsOn}}">商品</navigator>
+    <navigator bindtap="assessTap" class="{{assessOn}}">评价</navigator>
+    <navigator bindtap="sellerTap" class="{{sellerOn}}">商家</navigator>
+  </view>
+  <scroll-view class='leftNav' scroll-y='true' scroll-with-animation='true'>
+    <navigator data-id="{{code}}" wx:for="{{labels}}" wx:for-item="label" wx:for-index="code" bindtap='toView'>{{label}} </navigator>
+  </scroll-view>
+
+  <scroll-view class='menu' scroll-y='true' scroll-with-animation='true' scroll-into-view="{{toView}}">
+    <view wx:for="{{foods}}" wx:for-item="food" wx:for-index="label">
+      <text id="{{label}}">{{labels[label]}}</text>
+      <view class='food' wx:for="{{food}}" wx:for-item="info">
+        <image class='foodPic' src="http://www.jessicxin.top/oldplace/img/美食/{{labels[label]}}/{{info.name}}.jpg" mode='aspectFit' bindtap='showFood' data-foodname="{{info.name}}"></image>
+        <text class='foodName'>{{info.name}}</text>
+        <text class='foodAsses'>月售97份 好评率100%</text>
+        <text class='foodPrice'>￥{{info.price}}</text>
+        <button class='order Del' bindtap='delOrder' style='display:{{orders[info.name]["state"]}}' data-foodName="{{info.name}}">-</button>
+        <text class='orderNum' style='display:{{orders[info.name]["state"]}}'>{{ orders[info.name]["count"]}}</text>
+        <button class='order Add' bindtap='addOrder' data-price="{{info.price}}" data-foodName="{{info.name}}" data-img="http://www.jessicxin.top/oldplace/img/美食/{{labels[label]}}/{{info.name}}.jpg">+</button>
+
+        <view class='show' style='display:{{showFood[info.name]["zIndex"]}}'>
+          <image class='foodPic' src="http://www.jessicxin.top/oldplace/img/美食/{{labels[label]}}/{{info.name}}.jpg"></image>
+          <view class='describe'>
+            <text class='foodName'>{{info.name}}</text>
+            <text class='foodAsses'>月售97份 好评率100%</text>
+            <text class='discount'>8.9折</text>
+            <text class='foodPrice'>￥{{info.price}}</text>
+            <button class='order Del' bindtap='delOrder' style='display:{{ orders[info.name]["state"] }}' data-foodName="{{info.name}}">-</button>
+            <text class='orderNum' style='display:display:{{ orders[info.name]["state"] }}'>{{ orders[info.name]["count"]}}</text>
+            <button class='order Add' bindtap='addOrder' data-price="{{info.price}}" data-foodName="{{info.name}}">+</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='orderInfo' style="display:{{orderInfoDis}};bottom:{{orderInfoShow}};">
+
+    <view class='orderInfoHead'>
+      <text class="foodChoosen">已选商品</text>
+      <li class="clear" bindtap="clear">清空</li>
+    </view>
+    <scroll-view class='allOrder' scroll-y='true'>
+      <view class='eachOrder' wx:for="{{orders}}" wx:for-item="food" wx:for-index="id">
+        <text class='orderName'>{{food.name}}</text>
+        <text class='orderPrice'>￥{{food.price}}</text>
+        <button class='orderDel' bindtap='delOrder' data-price="{{food.price}}" data-foodName="{{food.name}}">-</button>
+        <text class="orderCount">{{food.count}}</text>
+        <button class='orderAdd' bindtap='addOrder' data-price="{{food.price}}" data-foodName="{{food.name}}">+</button>
+      </view>
+    </scroll-view>
+  </view>
+  <include src="assessment.wxml" />
+  <include src="seller.wxml" />
+  <include src="../common/footer.wxml" />
+</view>
+<view class='cover' style='display:{{coverDisplay}}' bindtap='hideFood'>
+</view>

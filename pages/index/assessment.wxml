@@ -1,0 +1,52 @@
+<scroll-view class='assessment' scroll-y='true' style="left:{{left}};display:{{assessDisplay}}">
+    <view class='overall'>
+      <view class='assessGrade'>
+        <text>5.0\n</text>
+        <text>综合评价\n</text>
+        <text>高于周边14.8%\n</text>
+      </view>
+      <view class='assessDetail'>
+        <text>服务态度</text>
+        <view class='assessShow'>
+          <image class='star' src='../img/star.png'></image>
+           <image class='star' src='../img/star.png'></image>
+            <image class='star' src='../img/star.png'></image>
+             <image class='star' src='../img/star.png'></image>
+              <image class='star' src='../img/star.png'></image>
+          </view>
+           <text>5.0</text>
+        <text>\n菜品评价</text>
+        <view class='assessShow'>
+          <image class='star' src='../img/star.png'></image>
+           <image class='star' src='../img/star.png'></image>
+            <image class='star' src='../img/star.png'></image>
+             <image class='star' src='../img/star.png'></image>
+          </view>
+          <text>4.8</text>
+          <text>\n送达时间</text>
+          <text class='arr_time'>37分钟送达</text>
+      </view>
+    </view>
+    <view class='comments' style="top:{{commentTop}}">
+      <view class='assessNav'>
+        <navigator data-id="all" class='evaluate all'  bindtap='toComment'>全部({{satisfied+disatisfied}})</navigator>
+        <navigator data-id="satisfied" class='evaluate satisfied'  bindtap='toComment'>满意({{satisfied}})</navigator>
+        <navigator data-id="disatisfied" class='evaluate disatisfied' bindtap='toComment'>不满意({{disatisfied}})</navigator>
+      </view>
+      <scroll-view class='commentArea' scroll-y='true' scroll-with-animation='true' scroll-into-view="{{toComment}}" bindscroll="scroll">
+        <view id='all'></view>
+        <view class='eachComment' wx:for="{{assessment}}" wx:for-item="each" wx:for-index="label"  id="{{label}}">
+
+        <view  wx:for="{{each}}" wx:for-item="info">
+
+          <image src='../img/me.jpg' class='userIcon'></image>
+          <text class='username'>{{info.username}} {{info.time}}</text>
+          <text>.....40分钟送达</text>
+          <text class='userCommnet'>{{info.comment}}</text>
+          <image src='../img/sellerIcon.jpg' class='foodImg'></image>
+          <text class='commentedFood'>{{info.foodName}}</text>
+        </view>
+      </view>
+      </scroll-view>
+    </view>
+</scroll-view>

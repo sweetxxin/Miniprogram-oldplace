@@ -1,0 +1,11 @@
+  <view class="top">
+    <image class='sellerIcon' src='../img/sellerIcon.jpg' mode='aspectFit'></image>
+    <view class='sellerInfo'>
+      <text>{{seller[0].name}}</text>
+      <text class='sendInfo'> 商家配送|57分钟送达|配送费￥5</text>
+      <text class='inform'>公告：{{activity["公告"][0]}}</text>
+    </view>
+    <view class="activity">
+      <text>{{activity["满减"][0]}}</text>
+    </view>
+  </view>

@@ -1,0 +1,136 @@
+.assessment {
+  height: 740rpx;
+  width: 100%;
+  background-color: #eaeaea;
+  position: absolute;
+  display: none;
+  top: 33%;
+  transition: 0.5s left 0.1s linear;
+  z-index: 10;
+}
+.star{
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.assessShow{
+  display: inline-block;
+  height: 30px;
+  width: 150rpx;
+  margin-left:10%;
+  margin-right:10rpx;
+}
+.assessShow + text{
+  color:red;
+}
+.overall{
+  background-color: white;
+  height: 30%;
+  width: 100%;
+  margin-top:15rpx; 
+}
+.assessGrade,.assessDetail{
+  float: left;
+  height: 70%;
+  margin-top:5%; 
+  padding-left:5%;
+
+}
+.assessGrade{
+  width: 25%;
+  text-align: center;
+}
+.assessGrade text:nth-child(1){
+  color: red;
+  font-size: 50rpx;
+}
+.assessGrade text:nth-child(2){
+  font-size: 30rpx;
+}
+.assessGrade text:nth-child(3){
+  font-size: 25rpx;
+}
+.assessDetail{
+  width: 50%;
+  border-left:1px solid #eaeaea; 
+}
+.assessDetail text{
+  font-size: 30rpx;
+}
+.comments{
+  width: 100%;
+  background: white;
+  height: 100%; 
+  position: absolute;
+  top: 125px;
+  z-index: 11;
+}
+.assessNav{
+  background: white;
+  margin: 10px auto;
+  height: 13%;
+  width: 90%;
+  border-bottom: 1px solid #eaeaea;
+  padding-top: 10px;
+  font-size: 30rpx;
+}
+.assessNav navigator {
+  display: block;
+  margin-right: 5%;
+  width: 20%;
+  text-align: center;
+  float: left;
+  line-height: 60rpx;
+}
+.all{
+   background-color:#436EEE;
+}
+.satisfied{
+  background-color: #BFEFFF;
+}
+.disatisfied{
+  background-color: #EDEDED;
+}
+.commentArea{
+  height: 80%;
+  background: white;
+}
+.eachComment{
+  margin-bottom:5%; 
+}
+.userIcon{
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 100%;
+  position: absolute;
+  left: 10rpx;
+}
+.foodImg{
+  height: 120rpx;
+  width: 120rpx;
+  margin-left:120rpx;
+  margin-top:10rpx;
+  margin-bottom:10rpx;  
+}
+.eachComment text{
+  font-size: 25rpx;
+  display: block;
+  margin-left:120rpx; 
+}
+.commentedFood{
+  height: 35rpx;
+  width: 150rpx;
+  border: 0.1px solid #eaeaea;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-bottom:20rpx;
+  text-align: center;
+}
+.arr_time{
+  margin-left:10%;
+  font-size: 28rpx;
+  color:#8A8A8A;
+}

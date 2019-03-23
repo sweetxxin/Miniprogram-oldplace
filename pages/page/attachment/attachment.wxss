@@ -1,0 +1,77 @@
+.attachmentContainer{
+  height: 603px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  background: #eaeaea;
+}
+.all{
+  height: 45%;
+  background: white;
+  width: 100%;
+  margin-top:4%; 
+}
+.textView{
+  height: 40%;
+  width: 80%;
+  background: #eaeaea;
+  margin: 5% auto;
+  padding:5%;
+  font-size: 16px;
+}
+.label{
+  height: 40%;
+  position: relative;
+}
+.la,.no,.more{
+  height: 25%;
+  width: 42%;
+  margin-left:5%;
+  position: absolute;
+}
+.la text{
+  height: 100%;
+  width: 32%;
+  border: 1px solid #eaeaea;
+}
+.no{
+   margin-left:50%;
+}
+.more{
+  margin-top:10%; 
+}
+.more text{
+  height: 100%;
+  width: 40%;
+  border: 1px solid #eaeaea;
+  margin-right:8%;
+}
+.no text{
+  height: 100%;
+  width: 40%;
+  border: 1px solid #eaeaea;
+  margin-right:8%;
+}
+
+text{
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+  line-height: 200%;
+}
+.sure{
+  height: 8%;
+  width: 90%;
+  margin-left:5%;
+  background: #00EE00;
+  color:white;
+  margin-top:5%;
+  border-radius: 0px;
+}
+.on{
+  color: white;
+  background: blue;
+}

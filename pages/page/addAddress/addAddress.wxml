@@ -1,0 +1,43 @@
+<view class="addrContainer">
+  <view class="contactPerson">
+    <text>联系人</text>
+    <input placeholder='你的姓名' bindblur='saveName' value='{{yourName}}'></input>
+    <view class="{{pick.gender.man}} gentlement" data-key="man" data-name="先生" data-index="gender" bindtap='picked'>先生</view>
+    <view class="{{pick.gender.lady}} lady" data-index="gender" data-name="女士" data-key="lady" bindtap='picked'>女士</view>
+  </view>
+  <view class='detail'>
+    <view class='detailInfo telephone'>
+      <text>电话</text>
+      <input focus="1" placeholder='你的手机号' bindblur='saveTelephone' value='{{telephone}}'></input>
+    </view>
+    <view class='detailInfo position'>
+      <text>位置</text>
+      <input  maxlength='-1' placeholder='位置' value="{{addrInfo.address}}" disabled="true"></input>
+      <text class='searchPos' bindtap='search'>></text>
+    </view>
+    <view class='detailInfo addrDetail'>
+      <text>详细地址</text>
+      <textarea bindinput='saveDetail' placeholder='详细地址(如门牌号等)'></textarea>
+    </view>
+    <view class='detailInfo label'>
+    <text>标签</text>
+      <view class="{{pick.label.home}} home" data-index="label" data-place="家" data-key="home" bindtap='picked'>家</view>
+      <view class="{{pick.label.school}} school" data-index="label" data-place="学校" data-key="school" bindtap='picked'>学校</view>
+      <view class="{{pick.label.company}} company" data-index="label" data-place="公司" data-key="company" bindtap='picked'>公司</view>
+    </view>
+  </view>
+  <button class='add' bindtap='sure'>确定</button>
+</view>
+<view class='searchAddr' style="display:{{display}}">
+<view class='top'>
+  <icon type='search' size="20" class="searchIcon"></icon>
+  <input class='keyword' placeholder='请输入小区/写字楼/学校等'  bindinput='input' ></input>
+  <button class='find'>搜索</button>
+  </view>
+  <scroll-view scroll-y='true' scroll-with-animation='true' class='reccomendView'>
+ <view class='reccomend'wx:for="{{reccomend}}" wx:for-item="addr" bindtap='useAddr' data-addr="{{addr.address}}">
+  <text>{{addr.title}}\n</text>
+  <text>{{addr.address}}</text>
+ </view>
+   </scroll-view>
+</view>
